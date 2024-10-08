@@ -191,6 +191,7 @@ body {
 .video-Sousvide {
   width: 68vh;
   height: 28vh;
+  border-radius: 1vh;
 }
 
 .thermographic-Box {
@@ -246,7 +247,7 @@ body {
 }
 
 .temperature-control-Box {
-  width: 24%;
+  width: 19%;
   height: 28vh;
   background-image: linear-gradient(to top, #DD3A33, #F2AE78);
   border-radius: 1vh;
@@ -314,7 +315,7 @@ body {
   background-color: #dbdbdb;
 }
 
-.heat-Box{
+.heat-Box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,7 +324,7 @@ body {
   margin-right: 1vh;
 }
 
-.heat-Box-Title{
+.heat-Box-Title {
   display: flex;
   align-items: center;
   width: 97%;
@@ -331,14 +332,14 @@ body {
   /* background-color: #c73bff; */
 }
 
-.heat-Title{
+.heat-Title {
   display: flex;
   font-size: calc(1.2vw);
   font-family: 'Pretendard-Regular';
   font-weight: 600;
 }
 
-.heat-Graph-Box{
+.heat-Graph-Box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,10 +352,355 @@ body {
   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
 }
 
-.heat-Graph{
+.heat-Graph {
   display: flex;
+  justify-content: center;
   width: 95%;
-  height: 30vh;
+  height: 35vh;
   border-radius: 1vh;
-  background-color: #dbdbdb;
+  background-color: #fff;
+}
+
+.temperature-control-Box-Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 38%;
+  /* background-color: #DD3A33; */
+}
+
+.temperature-control-Title1 {
+  font-size: calc(1.5vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #4B0D04;
+  margin: 2vh 0 0 0;
+}
+
+.temperature-control-Title2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(1.85vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #4B0D04;
+  margin: 0;
+}
+
+.temperature-control-Box-Total {
+  display: flex;
+  width: 100%;
+  /* background-color: #b181ff; */
+}
+
+.temperature-control-Box-Num {
+  display: flex;
+  justify-content: end;
+  width: 43%;
+  height: 18vh;
+  /* background-color: #dbdbdb; */
+  margin-left: 2vh;
+}
+
+.temperature-Box-Num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  /* background-color: #78d6f2; */
+}
+
+.temperature-Num {
+  font-size: calc(1.6vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #fff;
+}
+
+.temperature-Sign {
+  font-size: calc(0.7vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5vh;
+}
+
+.temperature-Box-Img {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  /* background-color: #90f278; */
+}
+
+.temper-Img {
+  width: 6vh;
+  height: 11vh;
+}
+
+.temperature-Box-Control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36%;
+  height: 16vh;
+  /* background-color: #b181ff; */
+}
+
+.temperature-control-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5vh;
+  height: 4.5vh;
+  border-radius: 3vh;
+  border: 0.4vh solid #fff;
+  background-color: transparent;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+  margin: 0.3vh;
+  cursor: pointer;
+}
+
+.faPlus {
+  font-size: calc(1.1vw);
+  font-family: 'Pretendard-Regular';
+  color: #fff;
+}
+
+.faSquare {
+  font-size: calc(0.8vw);
+  font-family: 'Pretendard-Regular';
+  color: #fff;
+}
+
+.faMinus {
+  font-size: calc(1vw);
+  font-family: 'Pretendard-Regular';
+  color: #fff;
+}
+
+.unbalance-alarm-Box-Title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 42%;
+  /* background-color: #4B0D04; */
+  border-bottom: 0.3vh solid #CBCBCB;
+  align-items: center;
+}
+
+.alarm-Img {
+  width: 4vh;
+}
+
+.unbalance-Text1{
+  font-size: calc(1.4vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 700;
+  color: #1D2029;
+  margin: 0.1vh;
+}
+
+.unbalance-Text2{
+  font-size: calc(0.9vw);
+  font-family: 'Pretendard-Regular';
+  color: #757575;
+  margin: 0.1vh;
+}
+
+.today-Box-Total{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 55%;
+  /* background-color: #4B0D04; */
+}
+
+.calendar-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  /* background-color: #F2AE78; */
+}
+
+.lowest-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  /* background-color: #85a3fd; */
+  padding-top: 1.3vh;
+  padding-left: 1vh;
+}
+
+.average-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  /* background-color: #DD3A33; */
+}
+
+.maximum-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  /* background-color: #85a3fd;s */
+  padding-right: 1vh;
+}
+
+.today-Img{
+  width: 9vh;
+  height: 8vh;
+}
+
+.lowest-temperature-Box-Img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  /* background-color: #90f278; */
+}
+
+.lowest-temperature-Box-Num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  margin-top: 1.6vh;
+  /* background-color: #78d6f2; */
+}
+
+.lowest-temperature-Num{
+  font-size: calc(1.4vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 900;
+  color: #ED6265;
+}
+
+.lowest-temperature-Sign{
+  font-size: calc(0.6vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 900;
+  color: #ED6265;
+  margin-bottom: 4vh;
+}
+
+
+.lowest-temper-Img{
+  width: 3vh;
+  height: 7vh;
+}
+
+.lowest-temperature-Text{
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 800;
+  color: #4A4A4A;
+  margin: 0;
+}
+
+.average-Box-Btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10vh;
+  height: 6vh;
+  border-radius: 0.8vh;
+  background-image: linear-gradient(to top, #FFAD63, #FF7A00);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  margin: 4.2vh 0 2vh 0;
+}
+
+.average-Box-Img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  /* background-color: #90f278; */
+}
+
+.average-Box-Num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  /* background-color: #78d6f2; */
+}
+
+.average-Num{
+  font-size: calc(1.5vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 800;
+  color: #fff;
+}
+
+.average-Sign{
+  font-size: calc(0.6vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 4vh;
+}
+
+.average-Text {
+  display: flex;
+  justify-content: center;
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 800;
+  color: #FF6400;
+  margin: 0;
+}
+
+.maximum-temperature-Box-Img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  /* background-color: #90f278; */
+}
+
+.maximum-temperature-Box-Num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3vh;
+  margin-top: 1.2vh;
+  /* background-color: #78d6f2; */
+}
+
+.maximum-temperature-Num{
+  font-size: calc(1.4vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 900;
+  color: #E72E32;
+}
+
+.maximum-temperature-Sign{
+  font-size: calc(0.6vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 900;
+  color: #E72E32;
+  margin-bottom: 4vh;
+}
+
+
+.maximum-temper-Img{
+  width: 4vh;
+}
+
+.maximum-temperature-Text{
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 800;
+  color: #4A4A4A;
+  margin: 0;
 }

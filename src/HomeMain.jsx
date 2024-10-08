@@ -1,5 +1,7 @@
 import React from 'react';
 import './css/HomeMain.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquare, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const HomeMain = () => {
   return (
@@ -33,7 +35,10 @@ const HomeMain = () => {
                   <p className='video-Title'>수비드 기계 촬영 영상</p>
                 </div>
                 <div className='video-Box-Sousvide'>
-                  <video src='/' controls className='video-Sousvide'></video>
+                  <video controls className='video-Sousvide'>
+                    <source src="/videos/Preview.mp4" type="video/mp4"/>
+                  </video>
+                  {/* <video src='/' controls className='video-Sousvide'></video> */}
                 </div>
               </div>
               <div className='thermographic-Box'>
@@ -45,11 +50,73 @@ const HomeMain = () => {
                     <img src='/img/thermographic-camera-image.jpg' className='thermographic-camera-Img'></img>
                   </div>
                   <div className='temperature-control-Box'>
-
+                    <div className='temperature-control-Box-Title'>
+                      <p className='temperature-control-Title1'>수비드 기계</p>
+                      <p className='temperature-control-Title2'>온도 제어</p>
+                    </div>
+                    <div className='temperature-control-Box-Total'>
+                      <div className='temperature-control-Box-Num'>
+                        <div>
+                          <div className='temperature-Box-Num'>
+                            <p className='temperature-Num'>120</p>
+                            <p className='temperature-Sign'>°C</p>
+                          </div>
+                          <div className='temperature-Box-Img'>
+                            <img src='/img/temperature.png' className='temper-Img'></img>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='temperature-Box-Control'>
+                        <button className='temperature-control-Btn'><FontAwesomeIcon icon={faPlus} className='faPlus' /></button>
+                        <button className='temperature-control-Btn'><FontAwesomeIcon icon={faSquare} className='faSquare' /></button>
+                        <button className='temperature-control-Btn'><FontAwesomeIcon icon={faMinus} className='faMinus' /></button>
+                      </div>
+                    </div>
                   </div>
                   <div className='unbalance-alarm-Box'>
-                    <div></div>
-                    <div></div>
+                    <div className='unbalance-alarm-Box-Title'>
+                      <img src='/img/alarm.png' className='alarm-Img'></img>
+                      <p className='unbalance-Text1'>온도 불균형 감지</p>
+                      <p className='unbalance-Text2'>정상 범위를 벗어났습니다</p>
+                    </div>
+                    <div className='today-Box-Total'>
+                      <div className='calendar-Box'>
+                        <img src='/img/today-calendar.png' className='today-Img'></img>
+                      </div>
+                      <div className='lowest-Box'>
+                        <div className='lowest-temperature-Box-Img'>
+                          <div className='lowest-temperature-Box-Num'>
+                            <p className='lowest-temperature-Num'>80</p>
+                            <p className='lowest-temperature-Sign'>°C</p>
+                          </div>
+                          <img src='/img/lowest-temperature.png' className='lowest-temper-Img'></img>
+                          <p className='lowest-temperature-Text'>최저</p>
+                        </div>
+                      </div>
+                      <div className='average-Box'>
+                        <div className='average-Box-Total'>
+                          <div>
+                            <div className='average-Box-Btn'>
+                              <div className='average-Box-Num'>
+                                <p className='average-Num'>120</p>
+                                <p className='average-Sign'>°C</p>
+                              </div>
+                            </div>
+                            <p className='average-Text'>평균</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='maximum-Box'>
+                        <div className='maximum-temperature-Box-Img'>
+                          <div className='maximum-temperature-Box-Num'>
+                            <p className='maximum-temperature-Num'>160</p>
+                            <p className='maximum-temperature-Sign'>°C</p>
+                          </div>
+                          <img src='/img/temperature.png' className='maximum-temper-Img'></img>
+                          <p className='maximum-temperature-Text'>최대</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -68,7 +135,9 @@ const HomeMain = () => {
                   <p className='heat-Title'>열 분포 현황</p>
                 </div>
                 <div className='heat-Graph-Box'>
-                  <div className='heat-Graph'></div>
+                  <div className='heat-Graph'>
+                    <img src='/img/heat-distribution-status.png'></img>
+                  </div>
                 </div>
               </div>
             </div>
