@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KCC-Hanbit';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-half {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.main-Box-Total {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.user-Box {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 2.5vh;
+}
+
+.main-Box-Top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 195vh; */
+  min-width: 197vh;
+  /* max-height: 90vh; */
+  min-height: 9vh;
+  background-image: linear-gradient(to right, #DD3A33, #F2AE78);
+  border-top-left-radius: calc(1.5vw);
+  border-top-right-radius: calc(1.5vw);
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.15);
+}
+
+.user-Img {
+  width: 5vh;
+  height: 5vh;
+}
+
+.user-Name {
+  font-size: calc(1.2vw);
+  font-family: 'KCC-Hanbit';
+  color: #fff;
+  margin-left: 1vh;
+}
+
+.weather-and-bell-Box {
+  display: flex;
+  align-items: center;
+  padding: 0 3vh 0 0;
+}
+
+.weather-Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vh;
+  height: 6vh;
+  border-radius: 1vh;
+  background-color: #e65449;
+}
+
+.weather-Sun {
+  width: 4vh;
+  height: 4vh;
+}
+
+.weather-Temper {
+  font-size: calc(1.2vw);
+  font-family: 'KCC-Hanbit';
+  color: #fff;
+  margin-left: 1vh;
+}
+
+.weather-Detail-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.5vh;
+}
+
+.weather-Location {
+  font-size: calc(0.8vw);
+  font-family: 'KCC-Hanbit';
+  color: #fff;
+  margin: 0;
+}
+
+.weather-window {
+  font-size: calc(0.8vw);
+  font-family: 'KCC-Hanbit';
+  color: #fff;
+  margin: 0;
+}
+
+.bell {
+  width: 4vh;
+  height: 3.5vh;
+  margin-left: 3vh;
+}
+
+.main-Box-Body {
+  display: flex;
+  flex-direction: column;
+  min-width: 195vh;
+  min-height: 85vh;
+  background-color: #fff;
+  border-bottom-left-radius: calc(1.5vw);
+  border-bottom-right-radius: calc(1.5vw);
+}
+
+.video-Box-Total {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  /* background-color: #4692f7; */
+}
+
+.distribution-Box-Total {
+  display: flex;
+  width: 100%;
+  height: 45vh;
+  /* background-color: #e65449; */
+}
+
+.video-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  /* background-color: #3bffbe; */
+  margin-left: 1vh;
+}
+
+.video-Box-Title {
+  display: flex;
+  align-items: center;
+  width: 96%;
+  height: 6vh;
+  /* background-color: #c73bff; */
+}
+
+.video-Title {
+  display: flex;
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #1D2029;
+}
+
+.video-Box-Sousvide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  height: 40vh;
+  background-color: #fff;
+  border-top: 1vh solid #E15241;
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+}
+
+.video-Sousvide {
+  width: 68vh;
+  height: 28vh;
+}
+
+.thermographic-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  /* background-color: #46f755; */
+  margin-right: 1vh;
+}
+
+.thermographic-Box-Title {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  height: 6vh;
+  /* background-color: #c73bff; */
+}
+
+.thermographic-Title {
+  display: flex;
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #1D2029;
+}
+
+.thermographic-Box-Sousvide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98%;
+  height: 40vh;
+  background-color: #fff;
+  border-top: 1vh solid #E15241;
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+  /* background-color: #5ce141; */
+}
+
+.thermographic-camera-Box {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  margin-left: 1vh;
+}
+
+.thermographic-camera-Img {
+  height: 28vh;
+  border-radius: 1vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+}
+
+.temperature-control-Box {
+  width: 24%;
+  height: 28vh;
+  background-image: linear-gradient(to top, #DD3A33, #F2AE78);
+  border-radius: 1vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+}
+
+.unbalance-alarm-Box {
+  width: 42%;
+  height: 28vh;
+  background-color: #fff;
+  border-radius: 1vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+  margin-right: 1vh;
+}
+
+.distribution-Box-Total {
+  display: flex;
+  width: 100%;
+  /* background-color: #5ce141; */
+}
+
+.temperature-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 58%;
+  /* background-color: #c8f746; */
+  margin-left: 1vh;
+}
+
+.temperature-Box-Title {
+  display: flex;
+  align-items: center;
+  width: 97%;
+  height: 6vh;
+  /* background-color: #c73bff; */
+}
+
+.temperature-Title {
+  display: flex;
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  color: #1D2029;
+}
+
+.temperature-Graph-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: 35vh;
+  background-color: #fff;
+  border-top: 1vh solid #E15241;
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+}
+
+.temperature-Graph {
+  display: flex;
+  width: 95%;
+  height: 30vh;
+  border-radius: 1vh;
+  background-color: #dbdbdb;
+}
+
+.heat-Box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42%;
+  /* background-color: #46f755; */
+  margin-right: 1vh;
+}
+
+.heat-Box-Title{
+  display: flex;
+  align-items: center;
+  width: 97%;
+  height: 6vh;
+  /* background-color: #c73bff; */
+}
+
+.heat-Title{
+  display: flex;
+  font-size: calc(1.2vw);
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+}
+
+.heat-Graph-Box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: 35vh;
+  background-color: #fff;
+  border-top: 1vh solid #E15241;
+  border-bottom-left-radius: 1.5vh;
+  border-bottom-right-radius: 1.5vh;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
+}
+
+.heat-Graph{
+  display: flex;
+  width: 95%;
+  height: 30vh;
+  border-radius: 1vh;
+  background-color: #dbdbdb;
+}
